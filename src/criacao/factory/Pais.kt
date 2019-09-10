@@ -1,5 +1,5 @@
 package criacao.factory
 
-enum class Pais {
-    EUA, BRASIL
+enum class Pais(val nome: String) {
+    US("Estados Unidos"), BR("Brasil"), PT("Portugal"), ES("Espanha")
 }

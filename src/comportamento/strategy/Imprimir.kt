@@ -19,6 +19,6 @@ fun main() {
     val upperCase = Imprimir(upperCaseFormatter)
     upperCase.printString(texto)
 
-    val prefixo = Imprimir { "Prefix: $it" }
+    val prefixo = Imprimir { "Prefixo: $it" }
     prefixo.printString(texto)
 }

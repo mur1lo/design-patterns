@@ -1,7 +1,7 @@
 package criacao.factory
 
 fun main() {
-    val moedaDisponivel = "Nenhuma moeda disponivel"
-    val codigoBrasil = MoedaFactory().moedaPorPais(Pais.BRASIL)?.codigo ?: moedaDisponivel
-    println("Brasil moeda: $codigoBrasil")
+    val pais = Pais.BR
+    val codigoMoeda = MoedaFactory().moedaPorPais(pais)?.codigo ?: "Nenhuma moeda disponivel"
+    println("${pais.nome} moeda: $codigoMoeda")
 }
